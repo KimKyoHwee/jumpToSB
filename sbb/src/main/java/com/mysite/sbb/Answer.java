@@ -1,5 +1,5 @@
 package com.mysite.sbb;
-//엔티티클래스 (JPA활용한 DB의 테이블 모델)
+//엔티티클래스 (JPA활용한 DB의 테이블 모델) - DB에 직접 데이터 저장이나 조회 불가 (속성 관리만)
 
 import jakarta.persistence.*;
 import lombok.Getter;
