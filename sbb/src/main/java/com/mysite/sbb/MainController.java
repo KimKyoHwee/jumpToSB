@@ -15,4 +15,10 @@ public class MainController {
         logger.info("index method on");
         return "안녕하세요, sbb에 오신 것을 환영합니다.";
     }
+    
+    @GetMapping("/")  //기본화면 매핑
+    public String root(){
+        return "redirect:/question/list";  //redirect:<URL>  : URL로 완전 새로운 요청
+                                           //forward:<URL>   : URL로 기존 요청값 유지한채로 요청
+    }
 }
